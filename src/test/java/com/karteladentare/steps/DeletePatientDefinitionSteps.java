@@ -8,6 +8,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class DeletePatientDefinitionSteps {
 
     @Steps
@@ -24,8 +26,8 @@ public class DeletePatientDefinitionSteps {
     }
 
     @Then("^They should see the list without patient with personal number (\\d+)$")
-    public void theyShouldSeeTheListWithoutPatientWithPersonalNumber(int arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void theyShouldSeeTheListWithoutPatientWithPersonalNumber(int personalNumber) throws Throwable {
+        deletePatientEndUserSteps
+                .shouldSeeDeleteListPageWithoutPatientWithPersonalNumber(String.valueOf(personalNumber));
     }
 }

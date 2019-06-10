@@ -10,6 +10,6 @@ import net.thucydides.core.pages.PageObject;
 public class PatientsListPage extends PageObject {
 
     public void deletePatient(String patientPersonalNumber) {
-        $("[deletepersonalnumber=" + patientPersonalNumber + "]").click();
+        $("[deletepersonalnumber=\'" + patientPersonalNumber + "\']").click();
     }
 }

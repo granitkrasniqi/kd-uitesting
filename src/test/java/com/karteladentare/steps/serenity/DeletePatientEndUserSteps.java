@@ -22,8 +22,9 @@ public class DeletePatientEndUserSteps {
     }
 
 
-//    @Step
-//    public void shouldSeePatientsListPage() {
-//        assertThat(addPatientPage.containsAllText("Lista e Pacientëve"), equalTo(true));
-//    }
+    @Step
+    public void shouldSeeDeleteListPageWithoutPatientWithPersonalNumber(String personalNumber) {
+        assertThat(patientsListPage.containsAllText("Lista e Pacientëve"), equalTo(true));
+        assertThat(patientsListPage.containsAllText(personalNumber), equalTo(false));
+    }
 }
