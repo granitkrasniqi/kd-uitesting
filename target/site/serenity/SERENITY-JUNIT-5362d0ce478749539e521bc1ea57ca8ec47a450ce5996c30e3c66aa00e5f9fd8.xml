@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Patients Management" skipped="0" tests="2" time="59.61" timestamp="2019-06-10T13:27:13.026+02:00[Europe/Berlin]"><testcase name="Add a new Patient"/><testcase name="Delete a patient"><failure message="The following error occurred: Expected enabled element was not enabled&#10;Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'&#10;System info: host: 'LAPTOP-26D1EDMP', ip: '192.168.233.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'LAPTOP-26D1EDMP', ip: '192.168.233.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown</failure><system-err>The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'LAPTOP-26D1EDMP', ip: '192.168.233.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown&#13;
+com.karteladentare.pages.PatientsListPage.deletePatient(PatientsListPage.java:13)&#13;
+com.karteladentare.steps.serenity.DeletePatientEndUserSteps.deletePatient(DeletePatientEndUserSteps.java:21)&#13;
+com.karteladentare.steps.DeletePatientDefinitionSteps.theUserDeletesPatientWithPersonalNumberInTheTable(DeletePatientDefinitionSteps.java:23)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
