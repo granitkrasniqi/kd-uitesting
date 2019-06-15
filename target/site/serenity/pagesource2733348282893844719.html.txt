@@ -1,0 +1,635 @@
+<html lang="en" ng-app="app" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <title>Kartela Elektronike Dentare e Pacientit</title>
+
+  <!-- Main styles for this application -->
+  <link href="css/style.css" rel="stylesheet"><link type="text/css" rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css"><link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"><link type="text/css" rel="stylesheet" href="node_modules/simple-line-icons/css/simple-line-icons.css"><script src="node_modules/chart.js/dist/Chart.min.js"></script>
+
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+
+<!-- BODY options, add following classes to body to change options
+
+  // Header options
+  1. '.header-fixed'					- Fixed Header
+
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'			  - Compact Sidebar
+
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+  // Breadcrumb options
+  1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+  // Footer options
+  1. 'footer-fixed'						- Fixed footer
+
+-->
+
+<body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden"><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="/browser-sync/browser-sync-client.js?v=2.23.6"></script>
+
+
+  <!-- User Interface -->
+  <!-- uiView: --><ui-view class="app ng-scope"><!-- Navbar -->
+<!-- ngInclude: 'views/common/navbar.html' --><header class="app-header navbar ng-scope">
+  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" ui-sref="app.main" href="#!/dashboard"></a>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler sidebar-toggler" href="#">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+    </li>
+
+    <!--
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Users</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="#">Settings</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="icon-list"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+
+        <div class="dropdown-header text-center">
+          <strong>Account</strong>
+        </div>
+
+        <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comment<span class="badge badge-warning">42</span></a>
+
+        <div class="dropdown-header text-center">
+          <strong>Settings</strong>
+        </div>
+
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Setting</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+        <div class="divider"></div>
+        <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock account</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler aside-menu-toggler" href="#">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+    </li>
+    -->
+
+  </ul>
+</header>
+<div class="app-body ng-scope">
+  <!-- Navigation -->
+  <!-- ngInclude: 'views/common/sidebar-nav.html' --><div class="sidebar ng-scope">
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" ui-sref-active="active" ui-sref="app.main" href="#!/dashboard"><i class="icon-speedometer"></i> Dashboard</a>
+      </li>
+
+      <li class="divider"></li>
+      <li class="nav-title">
+
+      </li>
+      <li class="nav-item nav-dropdown open" ng-class="{open: $state.includes('app.pacientet')}">
+        <a class="nav-link nav-dropdown-toggle active" ng-class="{active: $state.includes('app.pacientet')}" href="#"><i class="icon-people"></i> Pacientët</a>
+
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" ui-sref-active="active" ui-sref="app.pacientet.shto" href="#!/pacientet/shtoPacientin"><i class="icon-puzzle"></i> Shto Pacientin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" ui-sref-active="active" ui-sref="app.pacientet.listo" href="#!/pacientet/listoPacientet"><i class="icon-puzzle"></i> Lista e Pacientëve</a>
+            </li>
+
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.buttons"><i class="icon-puzzle"></i> Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.social-buttons"><i class="icon-puzzle"></i> Social Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.cards"><i class="icon-puzzle"></i> Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.forms"><i class="icon-puzzle"></i> Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.switches"><i class="icon-puzzle"></i> Switches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.components.tables"><i class="icon-puzzle"></i> Tables</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.icons')}">
+        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.icons')}" href="#"><i class="icon-star"></i> Icons</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.flags"><i class="icon-star"></i> Flags <span class="badge badge-success">NEW</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.fontawesome"><i class="icon-star"></i> Font Awesome <span class="badge badge-secondary">4.7</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.icons.simplelineicons"><i class="icon-star"></i> Simple Line Icons</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" ui-sref-active="active" ui-sref="app.widgets"><i class="icon-calculator"></i> Widgets <span class="badge badge-info">NEW</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" ui-sref-active="active" ui-sref="app.charts"><i class="icon-pie-chart"></i> Charts</a>
+      </li>
+      <li class="divider"></li>
+      <li class="nav-title">
+        Extras
+      </li>
+      <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.pages')}">
+        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.pages')}" href="#"><i class="icon-star"></i> Pages</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.login"><i class="icon-star"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.register"><i class="icon-star"></i> Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.404"><i class="icon-star"></i> Error 404</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="appSimple.500"><i class="icon-star"></i> Error 500</a>
+          </li>
+        </ul>
+      </li>
+      -->
+
+    </ul>
+      </li>
+      <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.sherbimet')}">
+        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.sherbimet')}" href="#"><i class="icon-book-open
+          "></i> Sherbimet</a>
+
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" ui-sref-active="active" ui-sref="app.sherbimet.shto" href="#!/sherbimet/shtoSherbimin"><i class="icon-puzzle"></i> Shto Sherbimin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ui-sref-active="active" ui-sref="app.sherbimet.listo" href="#!/sherbimet/listoSherbimet"><i class="icon-puzzle"></i> Lista e Sherbimeve</a>
+            </li>
+
+        
+
+        </ul>
+      </li>
+      <li class="nav-item nav-dropdown" ng-class="{open: $state.includes('app.terminet')}">
+        <a class="nav-link nav-dropdown-toggle" ng-class="{active: $state.includes('app.terminet')}" href="#"><i class="icon-star"></i> Terminet</a>
+        <ul class="nav-dropdown-items">
+          <li class="nav-item">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.terminet.shiko" href="#!/terminet/shikoTerminet"><i class="icon-star"></i> Shiko Terminet</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb" breadcrumb="">
+      <!-- ngRepeat: step in steps --><li class="breadcrumb-item ng-scope" ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract"><!-- ngSwitchWhen: false --><a ng-switch-when="false" href="#!/dashboard" class="ng-binding ng-scope">Home</a><!-- end ngSwitchWhen: --><!-- ngSwitchWhen: true --></li><!-- end ngRepeat: step in steps --><li class="breadcrumb-item ng-scope" ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract"><!-- ngSwitchWhen: false --><!-- ngSwitchWhen: true --><span ng-switch-when="true" class="ng-binding ng-scope">Pacientët</span><!-- end ngSwitchWhen: --></li><!-- end ngRepeat: step in steps --><li class="breadcrumb-item ng-scope active" ng-repeat="step in steps" ng-class="{active: $last}" ng-switch="$last || !!step.abstract"><!-- ngSwitchWhen: false --><!-- ngSwitchWhen: true --><span ng-switch-when="true" class="ng-binding ng-scope">Listo Pacientët</span><!-- end ngSwitchWhen: --></li><!-- end ngRepeat: step in steps -->
+
+      <!-- Breadcrumb Menu-->
+      <li class="breadcrumb-menu">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <a class="btn" ui-sref="app.main" href="#!/dashboard"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+          <a class="btn" ui-sref="app.main" href="#!/dashboard"><i class="icon-settings"></i> &nbsp;Settings</a>
+        </div>
+      </li>
+
+    </ol>
+    <div class="container-fluid">
+      <!-- uiView: --><ui-view class="ng-scope"><!-- uiView: --><ui-view class="ng-scope"><div class="animated fadeIn ng-scope">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i> Lista e Pacientëve
+                </div>
+                <div class="card-body">
+                    <div ng-show="" class="ng-binding ng-hide">
+                        
+                    </div>
+                    <label for="statusi-pacienteve">Status i Pacientëve: </label>
+                    <select class="mb-1 ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="statusiPacientit" id="statusi-pacienteve" name="statusiPacientit"><option value="? boolean:true ?" selected="selected"></option>
+                        <option value="true">Aktiv</option>
+                        <option value="false">Jo aktiv</option>
+                    </select>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nr. Personal</th>
+                            <th>Emri</th>
+                            <th>Mbiemri</th>
+                            <th>Gjinia</th>
+                            <th>Numri Telefonit</th>
+                            <th>Dite Lindja</th>
+                            <th>Adresa</th>
+                            <td>Veprimet</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- ngRepeat: pacienti in pacientet -->
+                        </tbody>
+                    </table>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--/.col-->
+    </div>
+</div></ui-view></ui-view>
+    </div>
+    <!-- /.conainer-fluid -->
+  </main>
+
+  <!-- Aside Menu -->
+  <!-- ngInclude: 'views/common/aside.html' --><aside class="aside-menu ng-scope">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a tab="" class="nav-link active" data-toggle="tab" href="#timeline" role="tab"><i class="icon-list"></i></a>
+    </li>
+    <li class="nav-item">
+      <a tab="" class="nav-link" data-toggle="tab" href="#messages" role="tab"><i class="icon-speech"></i></a>
+    </li>
+    <li class="nav-item">
+      <a tab="" class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="icon-settings"></i></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="timeline" role="tabpanel">
+      <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+        <small><b>Today</b></small>
+      </div>
+      <hr class="transparent mx-3 my-0">
+      <div class="callout callout-warning m-0 py-3">
+        <div class="avatar float-right">
+          <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        </div>
+        <div>Meeting with
+          <strong>Lucas</strong>
+        </div>
+        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+        <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA </small>
+      </div>
+      <hr class="mx-3 my-0">
+      <div class="callout callout-info m-0 py-3">
+        <div class="avatar float-right">
+          <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        </div>
+        <div>Skype with
+          <strong>Megan</strong>
+        </div>
+        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
+        <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line </small>
+      </div>
+      <hr class="transparent mx-3 my-0">
+      <div class="callout m-0 py-2 text-muted text-center bg-light text-uppercase">
+        <small><b>Tomorrow</b></small>
+      </div>
+      <hr class="transparent mx-3 my-0">
+      <div class="callout callout-danger m-0 py-3">
+        <div>New UI Project -
+          <strong>deadline</strong>
+        </div>
+        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
+        <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ </small>
+        <div class="avatars-stack mt-2">
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+        </div>
+      </div>
+      <hr class="mx-3 my-0">
+      <div class="callout callout-success m-0 py-3">
+        <div>
+          <strong>#10 Startups.Garden</strong> Meetup</div>
+        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+        <small class="text-muted"><i class="icon-location-pin"></i>&nbsp; Palo Alto, CA </small>
+      </div>
+      <hr class="mx-3 my-0">
+      <div class="callout callout-primary m-0 py-3">
+        <div>
+          <strong>Team meeting</strong>
+        </div>
+        <small class="text-muted mr-3"><i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
+        <small class="text-muted"><i class="icon-home"></i>&nbsp; creativeLabs HQ </small>
+        <div class="avatars-stack mt-2">
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+          <div class="avatar avatar-xs">
+            <img src="img/avatars/8.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+          </div>
+        </div>
+      </div>
+      <hr class="mx-3 my-0">
+    </div>
+    <div class="tab-pane p-3" id="messages" role="tabpanel">
+      <div class="message">
+        <div class="py-3 pb-5 mr-3 float-left">
+          <div class="avatar">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            <span class="avatar-status badge-success"></span>
+          </div>
+        </div>
+        <div>
+          <small class="text-muted">Lukasz Holeczek</small>
+          <small class="text-muted float-right mt-1">1:52 PM</small>
+        </div>
+        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+      </div>
+      <hr>
+      <div class="message">
+        <div class="py-3 pb-5 mr-3 float-left">
+          <div class="avatar">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            <span class="avatar-status badge-success"></span>
+          </div>
+        </div>
+        <div>
+          <small class="text-muted">Lukasz Holeczek</small>
+          <small class="text-muted float-right mt-1">1:52 PM</small>
+        </div>
+        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+      </div>
+      <hr>
+      <div class="message">
+        <div class="py-3 pb-5 mr-3 float-left">
+          <div class="avatar">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            <span class="avatar-status badge-success"></span>
+          </div>
+        </div>
+        <div>
+          <small class="text-muted">Lukasz Holeczek</small>
+          <small class="text-muted float-right mt-1">1:52 PM</small>
+        </div>
+        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+      </div>
+      <hr>
+      <div class="message">
+        <div class="py-3 pb-5 mr-3 float-left">
+          <div class="avatar">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            <span class="avatar-status badge-success"></span>
+          </div>
+        </div>
+        <div>
+          <small class="text-muted">Lukasz Holeczek</small>
+          <small class="text-muted float-right mt-1">1:52 PM</small>
+        </div>
+        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+      </div>
+      <hr>
+      <div class="message">
+        <div class="py-3 pb-5 mr-3 float-left">
+          <div class="avatar">
+            <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+            <span class="avatar-status badge-success"></span>
+          </div>
+        </div>
+        <div>
+          <small class="text-muted">Lukasz Holeczek</small>
+          <small class="text-muted float-right mt-1">1:52 PM</small>
+        </div>
+        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
+      </div>
+    </div>
+    <div class="tab-pane p-3" id="settings" role="tabpanel">
+      <h6>Settings</h6>
+
+      <div class="aside-options">
+        <div class="clearfix mt-4">
+          <small><b>Option 1</b></small>
+          <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+            <input type="checkbox" class="switch-input" checked="">
+            <span class="switch-label" data-on="On" data-off="Off"></span>
+            <span class="switch-handle"></span>
+          </label>
+        </div>
+        <div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+        </div>
+      </div>
+
+      <div class="aside-options">
+        <div class="clearfix mt-3">
+          <small><b>Option 2</b></small>
+          <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="On" data-off="Off"></span>
+            <span class="switch-handle"></span>
+          </label>
+        </div>
+        <div>
+          <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+        </div>
+      </div>
+
+      <div class="aside-options">
+        <div class="clearfix mt-3">
+          <small><b>Option 3</b></small>
+          <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="On" data-off="Off"></span>
+            <span class="switch-handle"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="aside-options">
+        <div class="clearfix mt-3">
+          <small><b>Option 4</b></small>
+          <label class="switch switch-text switch-pill switch-success switch-sm float-right">
+            <input type="checkbox" class="switch-input" checked="">
+            <span class="switch-label" data-on="On" data-off="Off"></span>
+            <span class="switch-handle"></span>
+          </label>
+        </div>
+      </div>
+
+      <hr>
+      <h6>System Utilization</h6>
+
+      <div class="text-uppercase mb-1 mt-4">
+        <small><b>CPU Usage</b></small>
+      </div>
+      <div class="progress progress-xs">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">348 Processes. 1/4 Cores.</small>
+
+      <div class="text-uppercase mb-1 mt-2">
+        <small><b>Memory Usage</b></small>
+      </div>
+      <div class="progress progress-xs">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">11444GB/16384MB</small>
+
+      <div class="text-uppercase mb-1 mt-2">
+        <small><b>SSD 1 Usage</b></small>
+      </div>
+      <div class="progress progress-xs">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">243GB/256GB</small>
+
+      <div class="text-uppercase mb-1 mt-2">
+        <small><b>SSD 2 Usage</b></small>
+      </div>
+      <div class="progress progress-xs">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <small class="text-muted">25GB/256GB</small>
+    </div>
+  </div>
+</aside>
+
+</div>
+
+<!-- Footer -->
+<!-- ngInclude: 'views/common/footer.html' --><footer class="app-footer ng-scope">
+  <span class="ml-auto">Kartela Elektronike Dentare e Pacientit © 2019</span>
+</footer></ui-view>
+
+  <!-- Bootstrap and necessary plugins -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- AngularJS -->
+  <script src="node_modules/angular/angular.min.js"></script>
+
+  <!-- AngularJS plugins -->
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/oclazyload/dist/ocLazyLoad.min.js"></script>
+  <script src="node_modules/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+  <script src="node_modules/angular-loading-bar/build/loading-bar.min.js"></script>
+
+  <!-- AngularJS CoreUI App scripts -->
+
+  <!--  AngularJS Bootstrap calendar -->
+  <!--<script src="js/moment.js"></script>-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+  <link href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
+  <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js"></script>
+
+  <!-- Angular moment picker -->
+  <script src="js/angular-moment-picker/angular-moment-picker.min.js"></script>
+  <link href="js/angular-moment-picker/angular-moment-picker.min.css" rel="stylesheet">
+
+  <script src="js/app.js"></script>
+
+  <script src="js/routes.js"></script>
+
+  <script src="js/demo/routes.js"></script>
+
+  <script src="js/controllers.js"></script>
+  <script src="js/terminetControllers.js"></script>
+  <script src="js/authControllers.js"></script>
+  <script src="js/directives.js"></script>
+
+
+</body></html>

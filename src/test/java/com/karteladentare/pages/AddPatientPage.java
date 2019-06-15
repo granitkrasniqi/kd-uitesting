@@ -56,6 +56,7 @@ public class AddPatientPage extends PageObject {
             gjiniaFemer.click();
         }
 
+
         this.diteLindja.type(diteLindja);
         this.numriTelefonit.type(numriTelefonit);
         this.email.type(email);

@@ -2,64 +2,503 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbb310e-3b58-4b40-8c27-3dccc9e4fc0b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kduitesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientDetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientUpdatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DetailsPatientDefinitionSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DetailsPatientEndUserSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Authentication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SherbimetManagement.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/002684ae200ca1e59a3cb24612942ace7f97381c2380c0e13c46cb6bb724f72d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/00b4ee35e57ee975169ef6dfb815ff55dc7edfb9545321f7b7156a2b39c85280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/026ed18e147fd1ca3c56bc05cd9f56d6fdc3fe68712878ac7d3645401ff3c4ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/03864ebd5d2c2da27147d47346746e55dc54ef5f84508d50cefd0e656bfd0be8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/03f5102c7a58dee08d7dced967df3e37ece627cc9729db7070eacc8a26a593d8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/06a6d6ceffb8264fd1d002e841efa3298fe07bc2e928542a7f895e0442534e44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/075e88357cb2f907646262dfedc551583a735dc43796b920f1a23e58e64693b9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/07ea784a5442bad3242a669790fa90553424d6d128d823ff49224039a4bc4b47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/08352ec67e18f19cde05ca6a28f103faed9489da573f8ae45b73894c02a1c038.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/08a3f2d0a7eced6eb1807925b3298421609aa0a6b7655d46685d4583f64f5b9a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/08dad7bb8018a136bfedde9aa2e0950e1a90798649d575464b17efd695fe2396.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/090b6605b494ec9fbe2e887a186fb9066fd0958f87c21f4e045e4051b4820688.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/0fc01cdcb63cb184ef627628cb9c2be036c545b56a53e530bce7dbc92f3a7b9b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/105f99fd9cae6305deefc171a07fa0f8caa5123cd97ce9d6f5add2ca3b9134d5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1086f5790affe51b6d0552f9ace2ae5deb98e6186678e791a98d0bf0dc0f30e9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/13621985fb21aa59894de7af2b642bff97a457acb328f51d7cf429d52e56af5e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/14197852ead981d736349dba8394c82a5993ada3fc2c9ddb5538ed669014eaa4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1494b1dc2d9c234fc2916f141d5fef36907cabf8054590781eab7959960e94fd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/16d628a08b97fe98583fa62604d8afb5561b5a6673e2d25002f01c3c0a62d403.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/184ce4f5bb8dce24b6fb7430da090c017ecb76b9bcb4c0f92ede223bb4841a74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/18da1308c2bd5be03d1bf247244cfdd6fbe91a965c25734ecd8516e70b267870.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/19273e59bdf1ce1db8da4ffdc3e1dc23b97a4588aa6cd82f4209a90ee0f5b9e4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/194f8bf22bcc348a689f124802326669e1209a89ab7b39fef0e59fbe1ff16250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1975ad5c59c57cacef25eaeba0cea238157a5400f06f5aa8b69a4a0d8e4baf1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1d75a2c7a4ed305716c122d8d7980d0b8f4f9927d1a38c0f88f8782b91160df0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1e7c2dc73e506c636e9427faf6e1484c4dd485fe8b45c8510b749f4ad15b3aae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1efb68ceccb2ba5b603f6b2547a001bcc45011f24219ca84acdb2a0258942969.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1f21ef6b42145f677372f595593351a7414c3409d4dd131ca1f7d387c2be19f1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/1f5ba2a96be50159bc92531f7dc88e54a8712f6c67300ecd5221df5da4034bed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/22252bbda2aea806a2c5a4b5c8abe3fc3efdd0a747933dba9edaeaac14554cda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/238209e83c4d8a996b18c8b6c0081d7629a91f3a7d522f97e6192dd7923efc05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/248bd261c05c6d7be5fb88de4596107ef617e1a8512f216a18d8620741fb6413.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/24b8a58931697fd38a0364693ac27a0dbfa9f888f621a4e7284b3cd98a4e7471.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/254e8d67214766281bff8e0a02297a88a74a465e51f6be029dd3a34ec92c1fa3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/25f9f7d0cafe61cb54c092508da0823073164e4ae86eeb30ab14f89935e84434.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/27b2fb9ffa967636a0132895508baee482901ada1638d8f36dc375b004358df3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/281c1a8acfd504a25debd463c80c64428a779edb87f42a0a75474e95fefe78ca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/291594aee1820c575e2f8d8d7e27c0fd6a9191999a0308a46a9cf1c7ef0413e1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/29189d62d1e624beca68247d50f5b1dfd149e1b7f8af2b4cb9e7faad618aca3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/2a5c23737e42cc0bda9c7b2880c11d8344551c34698d9a076f61a35086babb7e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/2ada9c9f1108e5b596f748629de62d9caab5b55ddba8e240c5cd5718ffa4e19b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/2e390d75549fd559e81aaeedae4c1e87b954e23dcef30e5cb1321b485881e61d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/31a1b041f64c6674c5973add67b71a6a5fba2d852922f75055a4e14cc426b223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/31b353418e43bc9cac501599e45ca15e5972eea40a666dbd3544acc107e7a1b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/33073bbdfa96fd7218e38fd5385dcda7899a4cd0e5a04a630e0b8913571e9cf4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/332f1d3ce79ab9820afb8413bc762308f83154dd51bd74b74b238a21e6489aeb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3501ffa680a398e87790ed5b666da0ebbfb0bcb849bf925cddd32949cdc0f5fa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/353deb107d1e5e91eab9e876640c9b3b50b5d6bb0be161fc2251829fc6db6fd6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/365e8d517bf78a21f591d2fe895ac215130e507c73019c64e00f0bcbb70413e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3729532c9dd6c2a5b6e19d09f0cd46546a27ffa2fc13fb233d9b3b4dfef16af8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3a41c53e7cd5613cced79a6340001fc9a7e027165d11216f9c8aab89ec724e42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3ad5ee707185d2be70a419b2d9579aab46029900f20efe3d383e98dffaf562c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3aeae78d79ec33f95a77f812d4d00778eb93e2d0b8c61473b615357b4e2ac0e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3bdf84b70dfb782c5cfd565577d06ab813e76ad2c29e21ed367019702f14cfff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3c7eae70296cd981e550f1903e59c678bf2e88536604645a6b768e0f93bcbf38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3d4eca3950d47e91f617f37b0ba27a5718ab04458c1013e18a4355f062c50042.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3d7e34b085896b5927de29f355ca0cf598a5af8825c9f1f4e4cc30257e5db1fe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3d7e34b085896b5927de29f355ca0cf598a5af8825c9f1f4e4cc30257e5db1fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3d7e34b085896b5927de29f355ca0cf598a5af8825c9f1f4e4cc30257e5db1fe_screenshots.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3dc4fd485b3c5a2254ef50586b13c1048288d768ee6362e848de3dfce0981868.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3df1ef93da0952309fc8bd9e32892bf5652e866b153925db98814cb683b38557.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/3f43be40c7ede504a1ef377888a283618476d70ff795309fd83eea9d90f6bcb0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/403ae727f7019795ba8304b3c4eede38efc7a61d8384ab067925c7491ebf29c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/421c1b5c795a7ad651ee4d78461a9780a34c6855cf4dd072a6d4acc4c5645f63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/42b4bba6b3818ef108e7c5457b65483ccdad2350800a3aecacc9b5260b5b1173.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/439137bb5f167aa0f3ca2ed5414522025a433589e1c12c7a07659361a43b1013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4400a7daa83ebd772fb7266636ec569131a7c8b78439b1a4ced4f03e1340a2cd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/45633b2a67884722beb9d4862c7e4cac9a1046586ebbd31f63436cb02176d203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/48cfb14f083c3d9326fe7e681903fcf9513cec26362506ec7d4be40a7c695d33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/494f971b6a5e85a0f1f294843f82b21075507fa44d4574ed044400169509caaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4e102735e98a55be3e0014dc9aa26ea59aa3a46b05515cebf2ef1de95b3303b9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4eff3efddc8ab92d2aa400bc0091c2fba153baf7a0aa78fb4f81d7b22c59892b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4f059f1ceaead6ffd72527fc89cd9e851b12937f0fa89fe91d0431744a0294ac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4fc104a3104276eafc5fbc40a498d831902d63b98ea36d4ed9c0b7332b1daf1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/4ff80ce72fdd6591dc1ac0da5bc44acc777c1f6ba34bbbdb55a0941a3c3645e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/519c47dc72731cd274ea4b9a43fa2e6d45848a96bb7c7e5151d7e0dc2dc36091.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/51eeef087e1daf5a584148172155968bb8b69bb4d075aa99832ec0e8df51b18e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/51ef71f36008d25681e9a1febe85f99ae76a403f865a2d69cc8d451fab257cf2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/56e4b91ff9165439c0b18e536ef220abf6845608a1d81621e8dc5d85b9ec254a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/584331957aedcfedf2f5eed75e01f361e2d042cb27d619219bd2e84438f0c75e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5b94448b8860951be69f9f542ae5e3c4f3bee9daf59e4e8b3eeb78a898b52a0b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5cd86b112a0baff9822aec0d274e3da82f25381c1230f7b13c72ada4dad7a26e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5ef818b89885868f0e259b298499b759aa76846686a154eeb65e86daca1dd7a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/5eff5933134e44a9f9eb75945a1aa6d6d34781fbe9297cbc4676a778f5fddb6b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/61094c3d878f243adfa688831e09904f23badca95b8078dc97bdce96ff098235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6240b3f6529b21d3bb94b1b0750c22ef8c6e04cdb651d62528b7f8876095eec0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/62b7e7ccaa59a9deb3caa950bec7adb1dd31c0f2690b61546de24df028240971.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/63b2741ac47dd8473437cee605ca52a66eca43d71336641385570db2fe5d4bae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/656a9fc8b00c21612d4d3dab031bd04538e44e75e8e0492ae9b39f6a022f38f2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6c5bdde8940f98e8f4f32737980f45dc1f2c6b90fc91f8f4224bf7e39e835a42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6d1c290ebd748168c0add7e19ae7ecd8ad2804c276e349fdca8eec4c58e8b167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6f35e76af0ac7bcd3ffeb449e92a4c6054bcc3f0316a42f5dc33dc7862e37ff9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6f75f4188b8e892fb48f65c5d076fd771cea2d79b7a2b6a386054d1ba04ddc78.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/6fba3589452e88da299491b2ddce255f79b626d29f6b0f4d936503c6dcf9a0ec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/706c9529f9e99f681b17b1cc1eb9db00d925c6ee8e673d555ed58501359a576a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7442fde45d2e54f503ecc86215d177464f1d3a78482067dc17b2f4c1d8c3fe8a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7549c717f26ee454590acea25de38b4327798c7aa42c801d7db342cee0533314.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/75e8b364436d382480d73e0a92fb853dc821824e1d0bf1d459167d8985845a07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/77b7acda7069c7eb2457fc217e410f42bf1f2103acb989a8f7051d2c051b0723.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/799c64a22b37a8f9ae615a203665cff4cb5c9ed7afb25c387d629c84b4a89b59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7a8213d0a5ca082fccbb5e8667aff9d9b5cbaf164e39d62ee79390de69976ab5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7a976080a366e9cadcd6b0dcc426462b5ec3572ccc1e72804a831f6318b754be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7d15dec556c0dcedd77dec9a9a7bc0bd3278bee4ca9450f60d8213302f704214.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7db60927e39f56fc11544c66a392548da928dbbfe3ccfb1a088034d111881854.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/7e012898f4b574d567abf2a36bae2293816b9b937e9bf49437b40bbb30baa7d3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8075cf392c5668c3d077ed2d5d1b74f5ac9eadca37cc0827ca4fecef7c76eeef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/81241716301e8510bd13da2aa362292f31cbb80cfcba0ab78f1d7f3457e17dc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8135fd4d0fcaee8553d39061ea52a72ab7ba3b385e9ed06632dee609e3bae2ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/821dafc004ee040a71b31112f4bfcf2723aecab4765098b0260eb16a2eee7501.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/82668c993a4664950474f1c20a19878c4dd3615174606af62e513585bfbe75e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/84a8e7ef8afadace0dbffc497cdc354820099d19d02c4a1c3c1b9097db64ffe3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/854ce92cd113648062c51ee2022eb84d64af6e6ed1bdd3db0e88abdf8184f662.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/861b23a382e9d86a907e84cc2b4b9dc423a6d04fc119399d7b73c0fc5e2be027.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/89307aaf46a3c46cbf79bfb3648410923f572bb92cdbf6135408a2b5bbfa49af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8a71c711283d83465925e37246c4c845a8104e4b9d81138160ac8d399e52d006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8b8a3ea712eaa4a721c513f4621f04e0026260e4a470007c40b2d32cfbca286d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8c08f4dc7e675e1d429a58d7362dc5cea0a554cb32c64c58707b4a519a490126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8c12e9453269c23e425eed8a1fec9cb51227313645fd18025431599a57312fc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8c33f689b7dc877107b7122356125e3ecbdb74c46fa4473cbe493cacf90f1987.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8d4005922e1b19f433852abfa704a3925a10f7267bdac8f7e74570ed0708c72b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8dcf1c9ce84987d92ec8da5ea68e72eae877279c00299dcc68035acf7cf9d2fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8e30798c6fc5493bd7714e2b7c38a56a2b4ae1c03cb040d2c7c524fdcc144bc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8edf668298bf65188f04863a885013b00b76433bcb9be848b3be1b172c172759.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/8f97ae315ab3bf505a7bee442e95a834548d3addedea862489b2b491ed7b24ff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/904eef846383688f4780da972abd7048159fdbcec78516c834e844dc9bcd75ae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/90e8b044b48c7e4607c2fecfe6ecdae54344d2ba2c21b37ca61849d0148d487d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/913229226e2a11083f045665f2bf5a4ca14eb6972d9a73cf86e43fcda0cf7484.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9296450d448269e835756f8b2204a3c0afd5456793119cc6f95085f3a5ae4237.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/932195ba9039af58ed992f038ccfd1661e3015c8619b0c014e6732dd5836ed1c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/932c60784e0fa0c37d2b68bdf44af59e37904c4e79e32c826e42811593a43cb0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/947c1814115829ba3e7915ed044332b6251187745565a2e77e694bd75382d616.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/95fc4a87fce8ad969b896490f8aff8436f3ecbc0ce429b297d257a63118139da.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/96e203cff50b1e74bcdc14dd1d76d1a76e5f88212df2c1440bec545df7bdc0a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9710df7cb735d31c644721aa0978ec963fab796d47f5df1cfe16c99b6ba5a75c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9b799492b984efc3643aba25ba0ff25643e48dc27192a1e53131505df7440090.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9d628690b0297884ce598839b2021b4a3d33fbf0b74d06a69eb1da30ed0b869c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9d647b3388e08904cd5e48719c82b462c0d1f8d232ac26914793afa2ce45bee3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9db3c5c261dea57d952495c20d455728f789ba9f0c1c9bdb1b602e6790a73771.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9e2d97385ded2270196d84548a343cf3c4800ba0cde1852ba1008b33566811a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/9e622797ea9d972007070d8371b0083ab3ca99b78aebe6c91e5f198112395096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/a05fafe6de112a7903d8a70cae43ba5a5fc62216a726eddab3c3198b9b4d3e52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/a5b51994131284c3a454ce392335bdd6c307fc8c15298924b2cd054ca28e83fa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/a5fae2513874d01746ab628503e35b8775061d9e1644a7734946525974f52639.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/aa5a7de1f0c02a5e691901903a671f356a732bbb90c10d0631030cc9a0daf05b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/aa9db4a5f9b6c78f0577bcb32b14567fe6ffa7c3d318c6a7d0a4d7fd8351d41a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ac3b0348ae855450f88d29ed401cf67e597075b1adf6faf17730393f335ef7e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/af2cdd2ce4fa1cd851134a93445ca273d921d682f5a73890f44abc876ea71ad1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b0612d21d07810f281139b00d20f7950af6ad6d568364ce18e9029c5811b07bc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b177f5bd08a347f927809fcca8e805100e587f9eba2d54c543ce64259b80895b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b1c250e2219f445af22171a506321414d5fbe1e733f273ab3f66310ea0ef5013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b211f0652ca53452dc8a7b7abbfff8c69e4cd8c303fdb30abdf09e51fafe6717.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b39a0b4dd448e60cc61d2f7bc6d35cfc8a7655d905424f11a6d62a588fa7a9a0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b3cdfa9959f4fe00ce542e816a581d85d43031bafe43a656f2b24dc8e9dfef0d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b5c48653fdc76f2f27089f223fca707db0a6ce2a5b845b94426b94190bc89278.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b7c84eb83618276a7498d07cdd82a63cd140d45ba642e195e5082cd0354b991f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b7c8852cce044f6d4e10c15aa040823769441b56e8b2b9148edca5d371228d07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/b98b582194058944616ad92e1e035dac35493df4219798f946e11978bbc04e9a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/bb49b4a958e6b1150be79a1ea0917c9659b7f2153581c0b4b2ce9adc3fbffd08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/bd457a98f7a614f758f01fa96068a60f29e3a5cb5ce5d2a15863103c4baeb970.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/bdd25774a83bfdc1a3766484305b34a141e32d8ce111fbb6b98e2c200536c542.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/bf5c7560b0d38d6e5e5626b32afded8718176fd30676fb119ff38df581292781.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c1bca1595da37e829a1801571e49d77443cde3e8a0124ae2a7250a1d1a8ef627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c2e0f1725237d13254ad65366ab62ccddbc8d2cc18792200e91253f71e2d0223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c401a83d49ea40f46240df1e1fd86540261b8d9999b290e2914a3cadf34adaae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c7adbfae517b3c6710f7b5931a2633e11a9219473bf26a32285abdff9a50e45b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c7e8bbd9222eba67f72f8d0adfc976da5bcb570ea75c99887922431ac15f50d3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c839ec2e4ac96695c0b0da2833e62efaa00aa89877811b78bc2da6113891acdb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c95a6c2a3ec4c65527947577a629c49a58ea931c42bec3527734db35176fe862.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/c9dcd9111f02c3ef2305161064a30e91d198bb95fce2d5b77bb2e65b33f9bcd0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/cb52753768437bf25542df46de4807a0ad46e994296db91c1e0498e0f8e9befb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/cbe1b8f855b8c398929d4824443704b79a141af52fc64da8d82f168e63d26260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ce1d5d0480a38e0b2b31fd3f55e952fb278a04ef856645d4685a2607576d0a2c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d0a65189fc997dd4e9a86aa3d15b3dc97a805c72f4634a109fe9d0c3ee4c7f36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d2c425a677fc0ccb04027d39d15e3c76672761b1c2a36300d5c5995d9cb0c206.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d3654a71ad66709621fd770f9de86c2103c8f86d979f9ef2b00de6cd043cbfe6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d76b6a8e8b93c3bd232cbf5fe52473a9cb95706124d873114d4bedbe142270be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d81213cbe5f03aaedb209ca03284a3873a33cf13402b6111e0b7ade41489ef26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d8d6bff2c7376cb413c9bd06a577ba93f7ddc24d1678db50c98df2055bf0099b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d970acac08fbe9b39138f5a608365b33318d2dec36ef7eb8dee5bbc08e5de118.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/d99f7341fb8d309541b78222d2fca3acd029b292cf8489c850912fccd13625f1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/da5da55f3cf9f7ac738c3c2e72da6db1f219f72688db54decaad578d333fca64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/dba9dac2eb61d437282aa50199e018daa9cf9550fe1b2c8323e2c0f3b3435875.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/dc431a077508dbeeee0cb0c4b7ac71f3a2b98f8a2fb08804f7aefd3cd1de58e0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/dd21db8ff8c618fe542f8a8211387f451a725c9dcbdb87a0f7b454a846c93c12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/dd232b5688145d86ae0614ad1b0210a8f1326a677ad5358cdd61e5e1e84b84af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/de98dca7df996863fd976f5509616b3206c3b4dfe9d77f93805bfc54ef5e3b92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/dfc7ef2af04bd599fcf262bb408625f77f2bf89e88302a7b1a976e52af001669.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e1e2ab1be7717ffc0566ae838b0f34753fdf2f235a7e097d155e98e9033c9ade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e1fafce891e6622471f7c12a9c587e7d14db530356947bb58f83ad71d111a5aa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e35f4e9a8d22ac7e837bf402bc30084db57dbc126997744a4e7f72e43c644b7d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e384ad198ab9079ef900be298dc8b2ad4fdba268592e82a3a853769cace499d7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e4634439574796ca9c8b9277013d0ed59f475dc1bbfd08968337e4386f4db809.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e4634439574796ca9c8b9277013d0ed59f475dc1bbfd08968337e4386f4db809.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e4634439574796ca9c8b9277013d0ed59f475dc1bbfd08968337e4386f4db809_screenshots.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e787c6739e0ff98c20d2f741c18e4cfecd14a9abae1934acf5f2a657b791e210.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e7b3651635a5420be54b9d9888f0c70a090ee310250bfa58d77209ab5990467e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e97924c37e10894bb1222bd9e167d22c341010459938b5ce0510af85d9170f12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/e9e2b4f1d786ace0f9476a8ffdeacc896d50dfc64767c0dab408febb30498650.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ea27cd05823f91eb457935c8d58e2d984e39078a2854d7e910efb9a9644ad377.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ea29a1367a06672fc73636ec5d26579b8388f3d6e73e7f535f2d6365196f17af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ec95f1d605d27a95b5b5eb535461b5aa53755b3e4d8fb1d92659942f3e697e1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ed97ea636d3899d7910f9479ed2e6081d83b6a70ff2ea416b649db05004d9ce0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f1adccd88cf3fa512eeba705b90c1bc9a9d05aa6fd5be4ad202352b4724fe2c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f35d30949741bc2be53caa692ea6faa220b42f8fd5b6fc91dfb7688e56fcfe29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f46f425dea1703a219082206568a9ddf2d7d209b4036b4c136d1ca144f7044e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f4ae29e05f7914e25c84b4c3bcaacecd3e677dcb2b4373a453fa5c3ef10f1ad3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f6269f2e12ad426dc4d8b511ec23835c8af2a613e8c382ce139769038451260a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f6aa32e3f4af7f9fd7d499c309ea43ac477d531b99399f7d4eafb9de2fd737d1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f907ddb816b6b22dec0d7f18078ee030eb85f3bb7a7f0f86f036aa74ea314725.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/f99e0bc450c6870ce456d91e10620e2702a25ae6dc749d1617645db4f20e811b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/fc49d932d022f0081cf2ea44bebf0064a23cb719cc85418a83a58edc385e22de.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ff252bf6b7ab4e831fe539db307ba06c64fa71e02af0f77a694770c48795ea19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ff4aeea36862b6291327d2c75cb8f3a2fb705b33fe3708da35778478ebbdd8b5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ffd9a8b06d20b295d4b1be0a87e642ac9394e354de1f0e6069ec86b8f5873025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/ffe47b0452ecbae000cd888e30dea73ae6f62e5a8d8efc69df5cc4d63ad74f01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource2733348282893844719.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource2766289233572666279.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource3019442453297678038.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource529444817885523822.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource5493204692131113900.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource5544093561132443202.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource6001104178783570573.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource6067881195826764065.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource6128128143763979117.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource622751071239591984.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource7176734930994223976.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource745324371243700573.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource765220487403214102.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource8566428629778127039.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/pagesource8763500990329135551.html.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_002684ae200ca1e59a3cb24612942ace7f97381c2380c0e13c46cb6bb724f72d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_00b4ee35e57ee975169ef6dfb815ff55dc7edfb9545321f7b7156a2b39c85280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_026ed18e147fd1ca3c56bc05cd9f56d6fdc3fe68712878ac7d3645401ff3c4ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_03864ebd5d2c2da27147d47346746e55dc54ef5f84508d50cefd0e656bfd0be8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_03f5102c7a58dee08d7dced967df3e37ece627cc9729db7070eacc8a26a593d8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_06a6d6ceffb8264fd1d002e841efa3298fe07bc2e928542a7f895e0442534e44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_075e88357cb2f907646262dfedc551583a735dc43796b920f1a23e58e64693b9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_07ea784a5442bad3242a669790fa90553424d6d128d823ff49224039a4bc4b47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_08352ec67e18f19cde05ca6a28f103faed9489da573f8ae45b73894c02a1c038.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_08a3f2d0a7eced6eb1807925b3298421609aa0a6b7655d46685d4583f64f5b9a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_08dad7bb8018a136bfedde9aa2e0950e1a90798649d575464b17efd695fe2396.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_090b6605b494ec9fbe2e887a186fb9066fd0958f87c21f4e045e4051b4820688.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_0fc01cdcb63cb184ef627628cb9c2be036c545b56a53e530bce7dbc92f3a7b9b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_105f99fd9cae6305deefc171a07fa0f8caa5123cd97ce9d6f5add2ca3b9134d5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1086f5790affe51b6d0552f9ace2ae5deb98e6186678e791a98d0bf0dc0f30e9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_13621985fb21aa59894de7af2b642bff97a457acb328f51d7cf429d52e56af5e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_14197852ead981d736349dba8394c82a5993ada3fc2c9ddb5538ed669014eaa4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1494b1dc2d9c234fc2916f141d5fef36907cabf8054590781eab7959960e94fd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_16d628a08b97fe98583fa62604d8afb5561b5a6673e2d25002f01c3c0a62d403.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_184ce4f5bb8dce24b6fb7430da090c017ecb76b9bcb4c0f92ede223bb4841a74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_18da1308c2bd5be03d1bf247244cfdd6fbe91a965c25734ecd8516e70b267870.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_19273e59bdf1ce1db8da4ffdc3e1dc23b97a4588aa6cd82f4209a90ee0f5b9e4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_194f8bf22bcc348a689f124802326669e1209a89ab7b39fef0e59fbe1ff16250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1975ad5c59c57cacef25eaeba0cea238157a5400f06f5aa8b69a4a0d8e4baf1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1d75a2c7a4ed305716c122d8d7980d0b8f4f9927d1a38c0f88f8782b91160df0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1e7c2dc73e506c636e9427faf6e1484c4dd485fe8b45c8510b749f4ad15b3aae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1efb68ceccb2ba5b603f6b2547a001bcc45011f24219ca84acdb2a0258942969.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1f21ef6b42145f677372f595593351a7414c3409d4dd131ca1f7d387c2be19f1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_1f5ba2a96be50159bc92531f7dc88e54a8712f6c67300ecd5221df5da4034bed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_22252bbda2aea806a2c5a4b5c8abe3fc3efdd0a747933dba9edaeaac14554cda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_238209e83c4d8a996b18c8b6c0081d7629a91f3a7d522f97e6192dd7923efc05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_248bd261c05c6d7be5fb88de4596107ef617e1a8512f216a18d8620741fb6413.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_24b8a58931697fd38a0364693ac27a0dbfa9f888f621a4e7284b3cd98a4e7471.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_254e8d67214766281bff8e0a02297a88a74a465e51f6be029dd3a34ec92c1fa3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_25f9f7d0cafe61cb54c092508da0823073164e4ae86eeb30ab14f89935e84434.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_27b2fb9ffa967636a0132895508baee482901ada1638d8f36dc375b004358df3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_281c1a8acfd504a25debd463c80c64428a779edb87f42a0a75474e95fefe78ca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_291594aee1820c575e2f8d8d7e27c0fd6a9191999a0308a46a9cf1c7ef0413e1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_29189d62d1e624beca68247d50f5b1dfd149e1b7f8af2b4cb9e7faad618aca3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_2a5c23737e42cc0bda9c7b2880c11d8344551c34698d9a076f61a35086babb7e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_2ada9c9f1108e5b596f748629de62d9caab5b55ddba8e240c5cd5718ffa4e19b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_2e390d75549fd559e81aaeedae4c1e87b954e23dcef30e5cb1321b485881e61d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_31a1b041f64c6674c5973add67b71a6a5fba2d852922f75055a4e14cc426b223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_31b353418e43bc9cac501599e45ca15e5972eea40a666dbd3544acc107e7a1b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_33073bbdfa96fd7218e38fd5385dcda7899a4cd0e5a04a630e0b8913571e9cf4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_332f1d3ce79ab9820afb8413bc762308f83154dd51bd74b74b238a21e6489aeb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3501ffa680a398e87790ed5b666da0ebbfb0bcb849bf925cddd32949cdc0f5fa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_353deb107d1e5e91eab9e876640c9b3b50b5d6bb0be161fc2251829fc6db6fd6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_365e8d517bf78a21f591d2fe895ac215130e507c73019c64e00f0bcbb70413e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3729532c9dd6c2a5b6e19d09f0cd46546a27ffa2fc13fb233d9b3b4dfef16af8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3a41c53e7cd5613cced79a6340001fc9a7e027165d11216f9c8aab89ec724e42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3ad5ee707185d2be70a419b2d9579aab46029900f20efe3d383e98dffaf562c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3aeae78d79ec33f95a77f812d4d00778eb93e2d0b8c61473b615357b4e2ac0e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3bdf84b70dfb782c5cfd565577d06ab813e76ad2c29e21ed367019702f14cfff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3c7eae70296cd981e550f1903e59c678bf2e88536604645a6b768e0f93bcbf38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3d4eca3950d47e91f617f37b0ba27a5718ab04458c1013e18a4355f062c50042.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3dc4fd485b3c5a2254ef50586b13c1048288d768ee6362e848de3dfce0981868.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3df1ef93da0952309fc8bd9e32892bf5652e866b153925db98814cb683b38557.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_3f43be40c7ede504a1ef377888a283618476d70ff795309fd83eea9d90f6bcb0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_403ae727f7019795ba8304b3c4eede38efc7a61d8384ab067925c7491ebf29c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_421c1b5c795a7ad651ee4d78461a9780a34c6855cf4dd072a6d4acc4c5645f63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_42b4bba6b3818ef108e7c5457b65483ccdad2350800a3aecacc9b5260b5b1173.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_439137bb5f167aa0f3ca2ed5414522025a433589e1c12c7a07659361a43b1013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4400a7daa83ebd772fb7266636ec569131a7c8b78439b1a4ced4f03e1340a2cd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_45633b2a67884722beb9d4862c7e4cac9a1046586ebbd31f63436cb02176d203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_48cfb14f083c3d9326fe7e681903fcf9513cec26362506ec7d4be40a7c695d33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_494f971b6a5e85a0f1f294843f82b21075507fa44d4574ed044400169509caaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4e102735e98a55be3e0014dc9aa26ea59aa3a46b05515cebf2ef1de95b3303b9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4eff3efddc8ab92d2aa400bc0091c2fba153baf7a0aa78fb4f81d7b22c59892b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4f059f1ceaead6ffd72527fc89cd9e851b12937f0fa89fe91d0431744a0294ac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4fc104a3104276eafc5fbc40a498d831902d63b98ea36d4ed9c0b7332b1daf1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_4ff80ce72fdd6591dc1ac0da5bc44acc777c1f6ba34bbbdb55a0941a3c3645e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_519c47dc72731cd274ea4b9a43fa2e6d45848a96bb7c7e5151d7e0dc2dc36091.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_51eeef087e1daf5a584148172155968bb8b69bb4d075aa99832ec0e8df51b18e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_51ef71f36008d25681e9a1febe85f99ae76a403f865a2d69cc8d451fab257cf2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_56e4b91ff9165439c0b18e536ef220abf6845608a1d81621e8dc5d85b9ec254a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_584331957aedcfedf2f5eed75e01f361e2d042cb27d619219bd2e84438f0c75e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5b94448b8860951be69f9f542ae5e3c4f3bee9daf59e4e8b3eeb78a898b52a0b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5cd86b112a0baff9822aec0d274e3da82f25381c1230f7b13c72ada4dad7a26e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5ef818b89885868f0e259b298499b759aa76846686a154eeb65e86daca1dd7a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_5eff5933134e44a9f9eb75945a1aa6d6d34781fbe9297cbc4676a778f5fddb6b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_61094c3d878f243adfa688831e09904f23badca95b8078dc97bdce96ff098235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6240b3f6529b21d3bb94b1b0750c22ef8c6e04cdb651d62528b7f8876095eec0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_62b7e7ccaa59a9deb3caa950bec7adb1dd31c0f2690b61546de24df028240971.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_63b2741ac47dd8473437cee605ca52a66eca43d71336641385570db2fe5d4bae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_656a9fc8b00c21612d4d3dab031bd04538e44e75e8e0492ae9b39f6a022f38f2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6c5bdde8940f98e8f4f32737980f45dc1f2c6b90fc91f8f4224bf7e39e835a42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6d1c290ebd748168c0add7e19ae7ecd8ad2804c276e349fdca8eec4c58e8b167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6f35e76af0ac7bcd3ffeb449e92a4c6054bcc3f0316a42f5dc33dc7862e37ff9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6f75f4188b8e892fb48f65c5d076fd771cea2d79b7a2b6a386054d1ba04ddc78.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_6fba3589452e88da299491b2ddce255f79b626d29f6b0f4d936503c6dcf9a0ec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_706c9529f9e99f681b17b1cc1eb9db00d925c6ee8e673d555ed58501359a576a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7442fde45d2e54f503ecc86215d177464f1d3a78482067dc17b2f4c1d8c3fe8a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7549c717f26ee454590acea25de38b4327798c7aa42c801d7db342cee0533314.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_75e8b364436d382480d73e0a92fb853dc821824e1d0bf1d459167d8985845a07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_77b7acda7069c7eb2457fc217e410f42bf1f2103acb989a8f7051d2c051b0723.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_799c64a22b37a8f9ae615a203665cff4cb5c9ed7afb25c387d629c84b4a89b59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7a8213d0a5ca082fccbb5e8667aff9d9b5cbaf164e39d62ee79390de69976ab5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7a976080a366e9cadcd6b0dcc426462b5ec3572ccc1e72804a831f6318b754be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7d15dec556c0dcedd77dec9a9a7bc0bd3278bee4ca9450f60d8213302f704214.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7db60927e39f56fc11544c66a392548da928dbbfe3ccfb1a088034d111881854.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_7e012898f4b574d567abf2a36bae2293816b9b937e9bf49437b40bbb30baa7d3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8075cf392c5668c3d077ed2d5d1b74f5ac9eadca37cc0827ca4fecef7c76eeef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_81241716301e8510bd13da2aa362292f31cbb80cfcba0ab78f1d7f3457e17dc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8135fd4d0fcaee8553d39061ea52a72ab7ba3b385e9ed06632dee609e3bae2ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_821dafc004ee040a71b31112f4bfcf2723aecab4765098b0260eb16a2eee7501.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_82668c993a4664950474f1c20a19878c4dd3615174606af62e513585bfbe75e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_84a8e7ef8afadace0dbffc497cdc354820099d19d02c4a1c3c1b9097db64ffe3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_854ce92cd113648062c51ee2022eb84d64af6e6ed1bdd3db0e88abdf8184f662.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_861b23a382e9d86a907e84cc2b4b9dc423a6d04fc119399d7b73c0fc5e2be027.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_89307aaf46a3c46cbf79bfb3648410923f572bb92cdbf6135408a2b5bbfa49af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8a71c711283d83465925e37246c4c845a8104e4b9d81138160ac8d399e52d006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8b8a3ea712eaa4a721c513f4621f04e0026260e4a470007c40b2d32cfbca286d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8c08f4dc7e675e1d429a58d7362dc5cea0a554cb32c64c58707b4a519a490126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8c12e9453269c23e425eed8a1fec9cb51227313645fd18025431599a57312fc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8c33f689b7dc877107b7122356125e3ecbdb74c46fa4473cbe493cacf90f1987.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8d4005922e1b19f433852abfa704a3925a10f7267bdac8f7e74570ed0708c72b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8dcf1c9ce84987d92ec8da5ea68e72eae877279c00299dcc68035acf7cf9d2fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8e30798c6fc5493bd7714e2b7c38a56a2b4ae1c03cb040d2c7c524fdcc144bc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8edf668298bf65188f04863a885013b00b76433bcb9be848b3be1b172c172759.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_8f97ae315ab3bf505a7bee442e95a834548d3addedea862489b2b491ed7b24ff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_904eef846383688f4780da972abd7048159fdbcec78516c834e844dc9bcd75ae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_90e8b044b48c7e4607c2fecfe6ecdae54344d2ba2c21b37ca61849d0148d487d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_913229226e2a11083f045665f2bf5a4ca14eb6972d9a73cf86e43fcda0cf7484.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9296450d448269e835756f8b2204a3c0afd5456793119cc6f95085f3a5ae4237.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_932195ba9039af58ed992f038ccfd1661e3015c8619b0c014e6732dd5836ed1c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_932c60784e0fa0c37d2b68bdf44af59e37904c4e79e32c826e42811593a43cb0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_947c1814115829ba3e7915ed044332b6251187745565a2e77e694bd75382d616.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_95fc4a87fce8ad969b896490f8aff8436f3ecbc0ce429b297d257a63118139da.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_96e203cff50b1e74bcdc14dd1d76d1a76e5f88212df2c1440bec545df7bdc0a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9710df7cb735d31c644721aa0978ec963fab796d47f5df1cfe16c99b6ba5a75c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9b799492b984efc3643aba25ba0ff25643e48dc27192a1e53131505df7440090.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9d628690b0297884ce598839b2021b4a3d33fbf0b74d06a69eb1da30ed0b869c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9d647b3388e08904cd5e48719c82b462c0d1f8d232ac26914793afa2ce45bee3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9db3c5c261dea57d952495c20d455728f789ba9f0c1c9bdb1b602e6790a73771.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9e2d97385ded2270196d84548a343cf3c4800ba0cde1852ba1008b33566811a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_9e622797ea9d972007070d8371b0083ab3ca99b78aebe6c91e5f198112395096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_a05fafe6de112a7903d8a70cae43ba5a5fc62216a726eddab3c3198b9b4d3e52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_a5b51994131284c3a454ce392335bdd6c307fc8c15298924b2cd054ca28e83fa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_a5fae2513874d01746ab628503e35b8775061d9e1644a7734946525974f52639.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_aa5a7de1f0c02a5e691901903a671f356a732bbb90c10d0631030cc9a0daf05b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_aa9db4a5f9b6c78f0577bcb32b14567fe6ffa7c3d318c6a7d0a4d7fd8351d41a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ac3b0348ae855450f88d29ed401cf67e597075b1adf6faf17730393f335ef7e8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_af2cdd2ce4fa1cd851134a93445ca273d921d682f5a73890f44abc876ea71ad1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b0612d21d07810f281139b00d20f7950af6ad6d568364ce18e9029c5811b07bc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b177f5bd08a347f927809fcca8e805100e587f9eba2d54c543ce64259b80895b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b1c250e2219f445af22171a506321414d5fbe1e733f273ab3f66310ea0ef5013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b211f0652ca53452dc8a7b7abbfff8c69e4cd8c303fdb30abdf09e51fafe6717.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b39a0b4dd448e60cc61d2f7bc6d35cfc8a7655d905424f11a6d62a588fa7a9a0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b3cdfa9959f4fe00ce542e816a581d85d43031bafe43a656f2b24dc8e9dfef0d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b5c48653fdc76f2f27089f223fca707db0a6ce2a5b845b94426b94190bc89278.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b7c84eb83618276a7498d07cdd82a63cd140d45ba642e195e5082cd0354b991f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b7c8852cce044f6d4e10c15aa040823769441b56e8b2b9148edca5d371228d07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_b98b582194058944616ad92e1e035dac35493df4219798f946e11978bbc04e9a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_bb49b4a958e6b1150be79a1ea0917c9659b7f2153581c0b4b2ce9adc3fbffd08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_bd457a98f7a614f758f01fa96068a60f29e3a5cb5ce5d2a15863103c4baeb970.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_bdd25774a83bfdc1a3766484305b34a141e32d8ce111fbb6b98e2c200536c542.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_bf5c7560b0d38d6e5e5626b32afded8718176fd30676fb119ff38df581292781.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c1bca1595da37e829a1801571e49d77443cde3e8a0124ae2a7250a1d1a8ef627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c2e0f1725237d13254ad65366ab62ccddbc8d2cc18792200e91253f71e2d0223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c401a83d49ea40f46240df1e1fd86540261b8d9999b290e2914a3cadf34adaae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c7adbfae517b3c6710f7b5931a2633e11a9219473bf26a32285abdff9a50e45b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c7e8bbd9222eba67f72f8d0adfc976da5bcb570ea75c99887922431ac15f50d3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c839ec2e4ac96695c0b0da2833e62efaa00aa89877811b78bc2da6113891acdb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c95a6c2a3ec4c65527947577a629c49a58ea931c42bec3527734db35176fe862.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_c9dcd9111f02c3ef2305161064a30e91d198bb95fce2d5b77bb2e65b33f9bcd0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_cb52753768437bf25542df46de4807a0ad46e994296db91c1e0498e0f8e9befb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_cbe1b8f855b8c398929d4824443704b79a141af52fc64da8d82f168e63d26260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ce1d5d0480a38e0b2b31fd3f55e952fb278a04ef856645d4685a2607576d0a2c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d0a65189fc997dd4e9a86aa3d15b3dc97a805c72f4634a109fe9d0c3ee4c7f36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d2c425a677fc0ccb04027d39d15e3c76672761b1c2a36300d5c5995d9cb0c206.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d3654a71ad66709621fd770f9de86c2103c8f86d979f9ef2b00de6cd043cbfe6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d76b6a8e8b93c3bd232cbf5fe52473a9cb95706124d873114d4bedbe142270be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d81213cbe5f03aaedb209ca03284a3873a33cf13402b6111e0b7ade41489ef26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d8d6bff2c7376cb413c9bd06a577ba93f7ddc24d1678db50c98df2055bf0099b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d970acac08fbe9b39138f5a608365b33318d2dec36ef7eb8dee5bbc08e5de118.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_d99f7341fb8d309541b78222d2fca3acd029b292cf8489c850912fccd13625f1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_da5da55f3cf9f7ac738c3c2e72da6db1f219f72688db54decaad578d333fca64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_dba9dac2eb61d437282aa50199e018daa9cf9550fe1b2c8323e2c0f3b3435875.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_dc431a077508dbeeee0cb0c4b7ac71f3a2b98f8a2fb08804f7aefd3cd1de58e0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_dd21db8ff8c618fe542f8a8211387f451a725c9dcbdb87a0f7b454a846c93c12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_dd232b5688145d86ae0614ad1b0210a8f1326a677ad5358cdd61e5e1e84b84af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_de98dca7df996863fd976f5509616b3206c3b4dfe9d77f93805bfc54ef5e3b92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_dfc7ef2af04bd599fcf262bb408625f77f2bf89e88302a7b1a976e52af001669.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e1e2ab1be7717ffc0566ae838b0f34753fdf2f235a7e097d155e98e9033c9ade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e1fafce891e6622471f7c12a9c587e7d14db530356947bb58f83ad71d111a5aa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e35f4e9a8d22ac7e837bf402bc30084db57dbc126997744a4e7f72e43c644b7d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e384ad198ab9079ef900be298dc8b2ad4fdba268592e82a3a853769cace499d7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e787c6739e0ff98c20d2f741c18e4cfecd14a9abae1934acf5f2a657b791e210.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e7b3651635a5420be54b9d9888f0c70a090ee310250bfa58d77209ab5990467e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e97924c37e10894bb1222bd9e167d22c341010459938b5ce0510af85d9170f12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_e9e2b4f1d786ace0f9476a8ffdeacc896d50dfc64767c0dab408febb30498650.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ea27cd05823f91eb457935c8d58e2d984e39078a2854d7e910efb9a9644ad377.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ea29a1367a06672fc73636ec5d26579b8388f3d6e73e7f535f2d6365196f17af.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ec95f1d605d27a95b5b5eb535461b5aa53755b3e4d8fb1d92659942f3e697e1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ed97ea636d3899d7910f9479ed2e6081d83b6a70ff2ea416b649db05004d9ce0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f1adccd88cf3fa512eeba705b90c1bc9a9d05aa6fd5be4ad202352b4724fe2c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f35d30949741bc2be53caa692ea6faa220b42f8fd5b6fc91dfb7688e56fcfe29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f46f425dea1703a219082206568a9ddf2d7d209b4036b4c136d1ca144f7044e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f4ae29e05f7914e25c84b4c3bcaacecd3e677dcb2b4373a453fa5c3ef10f1ad3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f6269f2e12ad426dc4d8b511ec23835c8af2a613e8c382ce139769038451260a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f6aa32e3f4af7f9fd7d499c309ea43ac477d531b99399f7d4eafb9de2fd737d1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f907ddb816b6b22dec0d7f18078ee030eb85f3bb7a7f0f86f036aa74ea314725.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_f99e0bc450c6870ce456d91e10620e2702a25ae6dc749d1617645db4f20e811b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_fc49d932d022f0081cf2ea44bebf0064a23cb719cc85418a83a58edc385e22de.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ff252bf6b7ab4e831fe539db307ba06c64fa71e02af0f77a694770c48795ea19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ff4aeea36862b6291327d2c75cb8f3a2fb705b33fe3708da35778478ebbdd8b5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ffd9a8b06d20b295d4b1be0a87e642ac9394e354de1f0e6069ec86b8f5873025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/serenity/scaled_ffe47b0452ecbae000cd888e30dea73ae6f62e5a8d8efc69df5cc4d63ad74f01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/karteladentare/pages/PatientDetailsPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/karteladentare/steps/DetailsPatientDefinitionSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/karteladentare/steps/serenity/DetailsPatientEndUserSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Authentication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/SherbimetManagement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/patients_management/AddAPatient.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/c14ee64179dcbe8063462e036a7ce3a2d2764e36f224dace1783d62ae6ebab52_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/karteladentare/pages/AddPatientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/karteladentare/pages/AddPatientPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/karteladentare/pages/PatientsListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/karteladentare/pages/PatientsListPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/patients_management/PatientsManagement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/patients_management/PatientsManagement.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PatientDefinitionTestSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefinitionSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DefinitionSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatientsManagement.feature" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeletePatientDefinitionSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DetailsPatientEndUserSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="255">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,23 +506,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PatientsListPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeletePatientEndUserSteps.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="27" column="85" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="85" />
+            <state relative-caret-position="85">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#478#479#0" expanded="true" />
@@ -93,38 +520,163 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndUserSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/EndUserSteps.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPatientDefinitionSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/AddPatientDefinitionSteps.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientDetailsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="254">
+              <caret line="116" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#1329#1330#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
+                <element signature="e#1357#1358#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1532#1533#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
+                <element signature="e#1773#1774#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1963#1964#0" expanded="true" />
+                <element signature="e#2025#2026#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2157#2158#0" expanded="true" />
+                <element signature="e#2227#2228#0" expanded="true" />
+                <element signature="e#2279#2280#0" expanded="true" />
+                <element signature="e#2321#2322#0" expanded="true" />
+                <element signature="e#2349#2350#0" expanded="true" />
+                <element signature="e#2401#2402#0" expanded="true" />
+                <element signature="e#2435#2436#0" expanded="true" />
+                <element signature="e#2478#2479#0" expanded="true" />
+                <element signature="e#2507#2508#0" expanded="true" />
+                <element signature="e#2561#2562#0" expanded="true" />
+                <element signature="e#2597#2598#0" expanded="true" />
+                <element signature="e#2646#2647#0" expanded="true" />
+                <element signature="e#2681#2682#0" expanded="true" />
+                <element signature="e#2747#2748#0" expanded="true" />
+                <element signature="e#2795#2796#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPatientEndUserSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/AddPatientEndUserSteps.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="454">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientUpdatePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1475">
+              <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1177#1178#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+                <element signature="e#1253#1254#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1465#1466#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
+                <element signature="e#1669#1670#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1779#1780#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+                <element signature="e#1859#1860#0" expanded="true" />
+                <element signature="e#1921#1922#0" expanded="true" />
+                <element signature="e#1965#1966#0" expanded="true" />
+                <element signature="e#2016#2017#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
+                <element signature="e#2123#2124#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
+                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2245#2246#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
+                <element signature="e#2331#2332#0" expanded="true" />
+                <element signature="e#2374#2375#0" expanded="true" />
+                <element signature="e#2403#2404#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#2493#2494#0" expanded="true" />
+                <element signature="e#2542#2543#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2643#2644#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,39 +694,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Desktop/Java TDD/vfarcic-tdd-java-ch07-books-store-20d6475f44ca/vfarcic-tdd-java-ch07-books-store-20d6475f44ca" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/tdd-java-ch04-ship" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/tdd-java-ch06-tic-tac-toe-mongo" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/tdd-java-ch07-books-store" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/vfarcic-tdd-java-ch03-tic-tac-toe-fdf20285e71c" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/vfarcic-tdd-java-ch05-design-15093a989135/vfarcic-tdd-java-ch05-design-15093a989135" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/serenity.conf" />
         <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/AddPatientDefinitionSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/AddPatientEndUserSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/patients_management/AddAPatient.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/MyStepdefs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientDetailsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DetailsPatientDefinitionSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/Authentication.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DetailsPatientEndUserSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientUpdatePage.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -182,9 +724,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1910" />
@@ -271,47 +810,25 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="kduitesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kduitesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kduitesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kduitesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="consult_dictionary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kduitesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kduitesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="patients_management" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../microservices-with-spring-manning/final_code/spmia-chapter8-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -336,6 +853,9 @@
   <component name="RunManager" selected="JUnit.PatientDefinitionTestSuite">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DefinitionTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kduitesting" />
@@ -345,20 +865,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.karteladentare" />
       <option name="MAIN_CLASS_NAME" value="com.karteladentare.DefinitionTestSuite" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="PatientDefinitionTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kduitesting" />
@@ -368,58 +881,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.karteladentare" />
       <option name="MAIN_CLASS_NAME" value="com.karteladentare.PatientDefinitionTestSuite" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.DefinitionTestSuite" />
@@ -444,287 +928,100 @@
       <updated>1559212307368</updated>
       <workItem from="1559212311382" duration="12468000" />
       <workItem from="1560162882956" duration="110000" />
-      <workItem from="1560164488631" duration="4779000" />
+      <workItem from="1560164488631" duration="8350000" />
+      <workItem from="1560248457213" duration="353000" />
+      <workItem from="1560248822732" duration="26000" />
+      <workItem from="1560248861204" duration="8642000" />
+      <workItem from="1560364646718" duration="326000" />
+      <workItem from="1560366874318" duration="7000" />
+      <workItem from="1560367152798" duration="677000" />
+      <workItem from="1560367903452" duration="118000" />
+      <workItem from="1560368055224" duration="2616000" />
+      <workItem from="1560452988779" duration="2785000" />
+      <workItem from="1560520707708" duration="351000" />
+      <workItem from="1560608174702" duration="4083000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PatientDefinitionTestSuite - 2019.05.30 at 16h 37m 56s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.11 at 19h 40m 05s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.05.30 at 17h 24m 27s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 16h 18m 42s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.05.30 at 17h 27m 19s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 16h 28m 30s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 13h 02m 59s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 16h 43m 54s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 13h 04m 03s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 18h 17m 50s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 13h 28m 14s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 18h 22m 54s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 14h 04m 30s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 18h 24m 23s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 14h 13m 13s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 18h 26m 16s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 14h 16m 46s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 20h 20m 12s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PatientDefinitionTestSuite - 2019.06.10 at 14h 21m 12s.xml">
+    <history-entry file="PatientDefinitionTestSuite - 2019.06.15 at 20h 21m 16s.xml">
       <configuration name="PatientDefinitionTestSuite" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17357000" />
+    <option name="totallyTimeSpent" value="40912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" weight="0.26923078" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31006712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32905984" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.477208" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32905984" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info id="Learn" order="2" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.47592068" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.26912183" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32905984" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Gradle" order="10" />
+      <window_info anchor="right" id="Maven" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/EndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/AddPatientEndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/AddPatientDefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/EndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/AddPatientEndUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/AddPatientDefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1845">
@@ -749,15 +1046,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DefinitionSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-          </folding>
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -768,58 +1067,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DefinitionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/MyStepdefs.java" />
+    <entry file="file://$PROJECT_DIR$/target/site/serenity/5362d0ce478749539e521bc1ea57ca8ec47a450ce5996c30e3c66aa00e5f9fd8.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DetailsPatientDefinitionSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="204">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/consult_dictionary/narrative.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SherbimetManagement.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/EndUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="374">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/AddPatientDefinitionSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="50" />
+        <state relative-caret-position="68">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
@@ -832,18 +1114,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/AddPatientEndUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/Authentication.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/patients_management/PatientsManagement.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DeletePatientEndUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="27" column="85" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="85" />
+        <state relative-caret-position="85">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#478#479#0" expanded="true" />
@@ -852,19 +1148,237 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/DeletePatientDefinitionSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/PatientDefinitionTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/DictionaryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/steps/serenity/DetailsPatientEndUserSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/AddPatientPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientsListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientDetailsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="116" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2227#2228#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2349#2350#0" expanded="true" />
+            <element signature="e#2401#2402#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/karteladentare/pages/PatientUpdatePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1779#1780#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+            <element signature="e#2331#2332#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#2493#2494#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
