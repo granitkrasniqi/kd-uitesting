@@ -27,4 +27,10 @@ public class DetailsPatientEndUserSteps {
         System.out.println("Title " + patientDetailsPage.getTitle());
         assertThat(patientDetailsPage.getNumriPersonal().getValue(), equalTo(personalNumber));
     }
+
+    @Step
+    public void checkNameAndSurname(String name, String surname) {
+        assertThat(patientDetailsPage.getEmri().getValue(), equalTo(name));
+        assertThat(patientDetailsPage.getMbiemri().getValue(), equalTo(surname));
+    }
 }

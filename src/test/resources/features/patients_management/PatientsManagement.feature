@@ -10,13 +10,13 @@ Feature: Patients Management
       When the user wants to see details of patient with personal number 102258796
       Then They should see the patient's with personal number 102258796 details page
 
-    Scenario: Delete a patient
-      Given the user is on the patients list page
-      When the user deletes patient with personal number 102258796 in the table
-      Then They should see the list without patient with personal number 102258796
-
 
       Scenario: Update patient's name and username
         Given the user is on the patients list page
-        When the user updates patient's with id 102258796 name to "Filan" and surname to "Fisteku"
-        Then They should see that the patient's name and surname is modified
+        When the user updates patient's with personal number 102258796 name to "Filan" and surname to "Fisteku"
+        Then They should see that the patient's with personal number 102258796 name is "Filan" and surname is "Fisteku"
+
+      Scenario: Delete a patient
+        Given the user is on the patients list page
+        When the user deletes patient with personal number 102258796 in the table
+        Then They should see the list without patient with personal number 102258796

@@ -36,6 +36,18 @@ public class PatientUpdatePage extends PageObject {
     @FindBy(name="shenimeTjera")
     private WebElementFacade shenimeTjera;
 
+    @FindBy(id="regjistroButton")
+    private WebElementFacade perditesoButton;
+
+    public void enterUpdateDetails(String emri, String mbiemri) {
+        this.emri.type(emri);
+        this.mbiemri.type(mbiemri);
+    }
+
+    public void clickPerditesoButton() {
+        perditesoButton.click();
+    }
+
     public WebElementFacade getNumriPersonal() {
         return numriPersonal;
     }
@@ -114,5 +126,13 @@ public class PatientUpdatePage extends PageObject {
 
     public void setShenimeTjera(WebElementFacade shenimeTjera) {
         this.shenimeTjera = shenimeTjera;
+    }
+
+    public WebElementFacade getPerditesoButton() {
+        return perditesoButton;
+    }
+
+    public void setPerditesoButton(WebElementFacade perditesoButton) {
+        this.perditesoButton = perditesoButton;
     }
 }

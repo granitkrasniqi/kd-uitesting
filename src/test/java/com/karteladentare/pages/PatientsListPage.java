@@ -29,4 +29,8 @@ public class PatientsListPage extends PageObject {
     public void viewDetails(String patientPersonalNumber) {
         $("[shikopersonalnumber=\'" + patientPersonalNumber + "\']").click();
     }
+
+    public void updatePatient(String patientPersonalNumber) {
+        $("[perditesopersonalnumber=\'" + patientPersonalNumber + "\']").click();
+    }
 }
