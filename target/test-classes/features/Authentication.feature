@@ -2,7 +2,7 @@ Feature: User authentication
 
   Scenario: User login
     Given the user is on login page
-    When the user is logged in with username "admin" and password "admin"
+    When the user is logged in with username granit.krasniqi and password password1
     Then the user should see system dashboard page
 
     Scenario: User login failed

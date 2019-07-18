@@ -25,7 +25,7 @@ public class AddPatientPage extends PageObject {
     @FindBy(id="gjinia-femer")
     private WebElementFacade gjiniaFemer;
 
-    @FindBy(name="diteLindja")
+    @FindBy(id="ditelindja")
     private WebElementFacade diteLindja;
 
     @FindBy(name="numriTelefonit")
